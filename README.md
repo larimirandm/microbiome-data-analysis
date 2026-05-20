@@ -60,16 +60,4 @@ O **Boxplot** focado na *Escherichia coli* confirma visualmente uma diferença e
 *   **Scikit-Learn:** Padronização de dados e execução do algoritmo de PCA.
 *   **Seaborn & Matplotlib:** Geração de gráficos de qualidade científica.
 
----
 
-## 🔧 Como Executar o Projeto
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com
-   ```
-2. Instale as dependências:
-   ```bash
-   pip install pandas numpy seaborn matplotlib scikit-learn
-   ```
-3. Execute o script principal ou abra o Jupyter Notebook na pasta `notebooks/`.

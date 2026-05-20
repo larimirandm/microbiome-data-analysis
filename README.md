@@ -6,7 +6,7 @@ Este repositório contém um projeto de bioinformática e ciência de dados foca
 
 Na microbiota humana, o equilíbrio entre as comunidades bacterianas é essencial para a saúde. O desequilíbrio nessa composição é conhecido como **disbiose**. 
 Neste projeto, simulamos um cenário clínico real onde:
-*   **Grupo Healthy (Saudável):** Caracterizado por uma alta abundância de bactérias simbióticas/benéficas (*Lactobacillus spp.*) e baixos níveis de patógenos opportunistas.
+*   **Grupo Healthy (Saudável):** Caracterizado por uma alta abundância de bactérias simbióticas/benéficas (*Lactobacillus spp.*) e baixos níveis de patógenos oportunistas.
 *   **Grupo Disease (Doente):** Caracterizado por um quadro de disbiose, com proliferação de patógenos como *Escherichia coli*, *Staphylococcus aureus* e *Pseudomonas aeruginosa*.
 
 ---
@@ -15,9 +15,11 @@ Neste projeto, simulamos um cenário clínico real onde:
 
 O projeto simula o fluxo de análise estatística (downstream) de dados multiômicos seguindo os passos abaixo:
 
-1.  **Simulação de Dados de Contagem:** Geração de matrizes de abundância baseadas em intervalos biológicos distintos para cada grupo experimental.
+1.  **Simulação de Dados de Contagem:** Geração de matrizes de abundância baseadas em intervalos biológicos distinots para cada grupo experimental.
 2.  **Normalização por Abundância Relativa (%):** Em bioinformática, o tamanho do sequenciamento (profundidade de leitura) varia por amostra. Para corrigir isso, os dados brutos foram normalizados dividindo a contagem de cada táxon pela soma total de leituras da respectiva amostra:
-    \[\text{Abundância Relativa} = \left( \frac{\text{Contagem do Táxon}}{\sum \text{Contagens da Amostra}} \right) \times 100\]
+
+\[\text{Abundância Relativa} = \left( \frac{\text{Contagem do Táxon}}{\sum \text{Contagens da Amostra}} \right) \times 100\]
+
 3.  **Análise Estatística Descritiva:** Agrupamento e cálculo de médias para validação dos perfis.
 4.  **Redução de Dimensionalidade (PCA):** Aplicação de *StandardScaler* seguido de Análise de Componentes Principais (PCA) para avaliar a separação global dos grupos.
 5.  **Visualização de Dados:** Construção de Heatmaps, Boxplots e gráficos de dispersão (Scatter Plots) para interpretação biológica.
@@ -59,5 +61,3 @@ O **Boxplot** focado na *Escherichia coli* confirma visualmente uma diferença e
 *   **Pandas & NumPy:** Manipulação de matrizes e normalização matemática.
 *   **Scikit-Learn:** Padronização de dados e execução do algoritmo de PCA.
 *   **Seaborn & Matplotlib:** Geração de gráficos de qualidade científica.
-
-
